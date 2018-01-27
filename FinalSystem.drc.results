@@ -1,0 +1,672 @@
+FinalSystem 1000
+bad_active_area
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Active area must be covered by a select
+bad_contact_poly
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to poly must consist of poly, CONTACT_TO_POLY, and METAL1
+bad_contact_ELECTRODE
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to ELECTRODE must consist of ELECTRODE, CONTACT_TO_ELECTRODE, and METAL1
+bad_contact_active
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to active must consist of active, CONTACT_TO_ACTIVE, and METAL1
+bad_contact_gate
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to poly may not be on gate region.
+bad_via
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via must consist of METAL1, via, and METAL2
+bad_via2
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via2 must consist of METAL2, via2, and METAL3
+bad_via3
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via3 must consist of METAL3, via3, and METAL4
+select_overlap
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Overlap of N+ and P+ not allowed
+bad_nwell
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Nwell must have well contact
+bad_psubstrate
+0 0 2 May 15 19:38:30 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Psubstrate must have a substrate contact
+bad_pgate
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+P-type gate must not be in psubstrate
+bad_ngate
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+N-type gate must not be in nwell
+bad_port
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Port must be completely covered with Metal
+DRC1_1
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+N-Well width = 12L
+DRC1_2
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+N-well spacing (different potential) = 18L
+DRC2_1
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Active area width = 3L
+DRC2_2
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Active area spacing = 3L
+DRC2_3
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Source/Drain Active to Well Edge = 6L
+DRC2_4
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Substrate/Well Contact, Active to Well Edge = 3L
+DRC3_1
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Poly width = 2L
+DRC3_2
+0 0 2 May 15 19:38:31 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Poly spacing = 3L
+DRC3_3
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Gate poly overlap of active = 2L
+DRC3_4
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Active overlap of gate poly = 3L
+DRC3_5
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Field poly to active = 1L
+DRC4.1p
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.1n
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.2
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.3p
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.3n
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.4pw
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.4ps
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.4nw
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.4ns
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC4.4np
+0 0 1 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+DRC5_1
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to poly size exactly 2L X 2L
+DRC5_2
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Poly overlap for contact = 1.5L
+DRC5_3
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to poly spacing = 3L
+DRC5_4
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to active space to gate of transistor = 2L
+DRC6_1
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to active exactly 2L X 2L
+DRC6_2
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Active overlap for contact = 1.5L
+DRC6_3
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to active spacing = 3L
+DRC6_4
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to active space to gate of transistor = 2L
+DRC7_1
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal1 width = 3L
+DRC7_2
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal1 spacing = 3L
+DRC7_3
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal1 overlap of contact to poly or contact to active = 1L
+DRC7_4
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal1 spacing = 6L if width > 10L
+DRC8_1
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via size exactly 2L X 2L
+DRC8_2
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via spacing = 3L
+DRC8_3
+0 0 2 May 15 19:38:32 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via overlap by METAL1 = 1L
+DRC9_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal2 width = 3L
+DRC9_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal2 spacing = 3L
+DRC9_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal2 overlap of via = 1L
+DRC9_4
+39 39 2 May 15 19:38:33 2017                   
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal2 spacing = 6L if width > 10L
+e 1 2
+99000 186000 99000 12427196
+102000 180804 102000 12422000
+e 2 2
+11608000 180804 11608000 12422000
+11611000 186000 11611000 12427196
+e 3 2
+152000 1302683 152000 1313317
+157000 1306000 157000 1310000
+e 4 2
+152000 1999602 152000 2008398
+157500 2002000 157500 2006000
+e 5 2
+152000 2231602 152000 2240398
+157500 2234000 157500 2238000
+e 6 2
+152000 2463602 152000 2472398
+157500 2466000 157500 2470000
+e 7 2
+152000 2695602 152000 2704398
+157500 2698000 157500 2702000
+e 8 2
+152000 2927602 152000 2936398
+157500 2930000 157500 2934000
+e 9 2
+152000 5478683 152000 5489317
+157000 5482000 157000 5486000
+e 10 2
+152000 7334683 152000 7345317
+157000 7338000 157000 7342000
+e 11 2
+152000 8958683 152000 8969317
+157000 8962000 157000 8966000
+e 12 2
+152000 11278683 152000 11289317
+157000 11282000 157000 11286000
+e 13 2
+152000 11974683 152000 11985317
+157000 11978000 157000 11982000
+e 14 2
+11552500 146000 11552500 150000
+11558000 143602 11558000 152398
+e 15 2
+11552500 378000 11552500 382000
+11558000 375602 11558000 384398
+e 16 2
+11552500 1074000 11552500 1078000
+11558000 1071602 11558000 1080398
+e 17 2
+11552500 1770000 11552500 1774000
+11558000 1767602 11558000 1776398
+e 18 2
+11552500 2002000 11552500 2006000
+11558000 1999602 11558000 2008398
+e 19 2
+11552500 2234000 11552500 2238000
+11558000 2231602 11558000 2240398
+e 20 2
+11552500 2930000 11552500 2934000
+11558000 2927602 11558000 2936398
+e 21 2
+11552500 4090000 11552500 4094000
+11558000 4087602 11558000 4096398
+e 22 2
+11552500 4322000 11552500 4326000
+11558000 4319602 11558000 4328398
+e 23 2
+11552500 4554000 11552500 4558000
+11558000 4551602 11558000 4560398
+e 24 2
+11552500 4786000 11552500 4790000
+11558000 4783602 11558000 4792398
+e 25 2
+11552500 5018000 11552500 5022000
+11558000 5015602 11558000 5024398
+e 26 2
+11552500 5250000 11552500 5254000
+11558000 5247602 11558000 5256398
+e 27 2
+11552500 5482000 11552500 5486000
+11558000 5479602 11558000 5488398
+e 28 2
+11552500 6642000 11552500 6646000
+11558000 6639602 11558000 6648398
+e 29 2
+11552500 6874000 11552500 6878000
+11558000 6871602 11558000 6880398
+e 30 2
+11552500 7106000 11552500 7110000
+11558000 7103602 11558000 7112398
+e 31 2
+11552500 8034000 11552500 8038000
+11558000 8031602 11558000 8040398
+e 32 2
+11552500 8266000 11552500 8270000
+11558000 8263602 11558000 8272398
+e 33 2
+11552500 8498000 11552500 8502000
+11558000 8495602 11558000 8504398
+e 34 2
+11552500 8730000 11552500 8734000
+11558000 8727602 11558000 8736398
+e 35 2
+11552500 8962000 11552500 8966000
+11558000 8959602 11558000 8968398
+e 36 2
+11552500 9194000 11552500 9198000
+11558000 9191602 11558000 9200398
+e 37 2
+11552500 10122000 11552500 10126000
+11558000 10119602 11558000 10128398
+e 38 2
+11552500 11978000 11552500 11982000
+11558000 11975602 11558000 11984398
+e 39 2
+11552500 12210000 11552500 12214000
+11558000 12207602 11558000 12216398
+DRC11_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE width = 7L ON CAP
+DRC11_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE spacing = 3L ON CAP
+DRC11_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Poly overlap of ELECTRODE = 5L
+DRC11_4
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE spacing to active or well = 2L
+DRC11_5
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE spacing to Contact to Poly = 6L
+DRC11_sel
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Capacitor and Select may not intersect
+DRC12_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE width = 2L
+DRC12_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE spacing = 3L
+DRC13_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to ELECTRODE size exactly 2L X 2L
+DRC13_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to ELECTRODE spacing = 3L
+DRC13_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE overlap for contact = 3L ON CAP PLATE
+DRC13_4
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+ELECTRODE overlap for contact = 2L NOT ON CAP PLATE
+DRC13_5
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Contact to ELECTRODE space to Poly or Active = 3L
+DRC14_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via2 size exactly 2L X 2L
+DRC14_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via2 spacing = 3L
+DRC14_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via2 overlap by METAL2 = 1L
+DRC15_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal3 width = 3L
+DRC15_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal3 spacing = 3L
+DRC15_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal3 overlap of via2 = 1L
+DRC15_4
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal3 spacing = 6L if width > 10L
+DRC21_1
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via3 size exactly 2L X 2L
+DRC21_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via3 spacing = 3L
+DRC21_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Via3 overlap by METAL3 = 1L
+DRC22_1
+80 80 2 May 15 19:38:33 2017                   
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal4 width = 6L
+e 1 2
+5849000 0 5855000 0
+5849000 4000 5855000 4000
+e 2 2
+5849000 12600000 5855000 12600000
+5849000 12604000 5855000 12604000
+e 3 2
+5865000 0 5871000 0
+5865000 4000 5871000 4000
+e 4 2
+5865000 12600000 5871000 12600000
+5865000 12604000 5871000 12604000
+e 5 2
+5881000 0 5887000 0
+5881000 4000 5887000 4000
+e 6 2
+5881000 12600000 5887000 12600000
+5881000 12604000 5887000 12604000
+e 7 2
+5897000 0 5903000 0
+5897000 4000 5903000 4000
+e 8 2
+5897000 12600000 5903000 12600000
+5897000 12604000 5903000 12604000
+e 9 2
+5913000 0 5919000 0
+5913000 4000 5919000 4000
+e 10 2
+5913000 12600000 5919000 12600000
+5913000 12604000 5919000 12604000
+e 11 2
+5929000 0 5935000 0
+5929000 4000 5935000 4000
+e 12 2
+5929000 12600000 5935000 12600000
+5929000 12604000 5935000 12604000
+e 13 2
+5945000 0 5951000 0
+5945000 4000 5951000 4000
+e 14 2
+5945000 12600000 5951000 12600000
+5945000 12604000 5951000 12604000
+e 15 2
+5961000 0 5967000 0
+5961000 4000 5967000 4000
+e 16 2
+5961000 12600000 5967000 12600000
+5961000 12604000 5967000 12604000
+e 17 2
+5977000 0 5983000 0
+5977000 4000 5983000 4000
+e 18 2
+5977000 12600000 5983000 12600000
+5977000 12604000 5983000 12604000
+e 19 2
+5993000 0 5999000 0
+5993000 4000 5999000 4000
+e 20 2
+5993000 12600000 5999000 12600000
+5993000 12604000 5999000 12604000
+e 21 2
+6009000 0 6015000 0
+6009000 4000 6015000 4000
+e 22 2
+6009000 12600000 6015000 12600000
+6009000 12604000 6015000 12604000
+e 23 2
+6025000 0 6031000 0
+6025000 4000 6031000 4000
+e 24 2
+6025000 12600000 6031000 12600000
+6025000 12604000 6031000 12604000
+e 25 2
+6041000 0 6047000 0
+6041000 4000 6047000 4000
+e 26 2
+6041000 12600000 6047000 12600000
+6041000 12604000 6047000 12604000
+e 27 2
+6057000 0 6063000 0
+6057000 4000 6063000 4000
+e 28 2
+6057000 12600000 6063000 12600000
+6057000 12604000 6063000 12604000
+e 29 2
+6073000 0 6079000 0
+6073000 4000 6079000 4000
+e 30 2
+6073000 12600000 6079000 12600000
+6073000 12604000 6079000 12604000
+e 31 2
+6089000 0 6095000 0
+6089000 4000 6095000 4000
+e 32 2
+6089000 12600000 6095000 12600000
+6089000 12604000 6095000 12604000
+e 33 2
+6105000 0 6111000 0
+6105000 4000 6111000 4000
+e 34 2
+6105000 12600000 6111000 12600000
+6105000 12604000 6111000 12604000
+e 35 2
+6121000 0 6127000 0
+6121000 4000 6127000 4000
+e 36 2
+6121000 12600000 6127000 12600000
+6121000 12604000 6127000 12604000
+e 37 2
+6137000 0 6143000 0
+6137000 4000 6143000 4000
+e 38 2
+6137000 12600000 6143000 12600000
+6137000 12604000 6143000 12604000
+e 39 2
+6153000 0 6159000 0
+6153000 4000 6159000 4000
+e 40 2
+6153000 12600000 6159000 12600000
+6153000 12604000 6159000 12604000
+e 41 2
+6169000 0 6175000 0
+6169000 4000 6175000 4000
+e 42 2
+6169000 12600000 6175000 12600000
+6169000 12604000 6175000 12604000
+e 43 2
+6185000 0 6191000 0
+6185000 4000 6191000 4000
+e 44 2
+6185000 12600000 6191000 12600000
+6185000 12604000 6191000 12604000
+e 45 2
+6201000 0 6207000 0
+6201000 4000 6207000 4000
+e 46 2
+6201000 12600000 6207000 12600000
+6201000 12604000 6207000 12604000
+e 47 2
+6217000 0 6223000 0
+6217000 4000 6223000 4000
+e 48 2
+6217000 12600000 6223000 12600000
+6217000 12604000 6223000 12604000
+e 49 2
+6233000 0 6239000 0
+6233000 4000 6239000 4000
+e 50 2
+6233000 12600000 6239000 12600000
+6233000 12604000 6239000 12604000
+e 51 2
+6249000 0 6255000 0
+6249000 4000 6255000 4000
+e 52 2
+6249000 12600000 6255000 12600000
+6249000 12604000 6255000 12604000
+e 53 2
+6265000 0 6271000 0
+6265000 4000 6271000 4000
+e 54 2
+6265000 12600000 6271000 12600000
+6265000 12604000 6271000 12604000
+e 55 2
+6281000 0 6287000 0
+6281000 4000 6287000 4000
+e 56 2
+6281000 12600000 6287000 12600000
+6281000 12604000 6287000 12604000
+e 57 2
+6297000 0 6303000 0
+6297000 4000 6303000 4000
+e 58 2
+6297000 12600000 6303000 12600000
+6297000 12604000 6303000 12604000
+e 59 2
+6313000 0 6319000 0
+6313000 4000 6319000 4000
+e 60 2
+6313000 12600000 6319000 12600000
+6313000 12604000 6319000 12604000
+e 61 2
+6329000 0 6335000 0
+6329000 4000 6335000 4000
+e 62 2
+6329000 12600000 6335000 12600000
+6329000 12604000 6335000 12604000
+e 63 2
+6345000 0 6351000 0
+6345000 4000 6351000 4000
+e 64 2
+6345000 12600000 6351000 12600000
+6345000 12604000 6351000 12604000
+e 65 2
+6361000 0 6367000 0
+6361000 4000 6367000 4000
+e 66 2
+6361000 12600000 6367000 12600000
+6361000 12604000 6367000 12604000
+e 67 2
+6377000 0 6383000 0
+6377000 4000 6383000 4000
+e 68 2
+6377000 12600000 6383000 12600000
+6377000 12604000 6383000 12604000
+e 69 2
+6393000 0 6399000 0
+6393000 4000 6399000 4000
+e 70 2
+6393000 12600000 6399000 12600000
+6393000 12604000 6399000 12604000
+e 71 2
+6409000 0 6415000 0
+6409000 4000 6415000 4000
+e 72 2
+6409000 12600000 6415000 12600000
+6409000 12604000 6415000 12604000
+e 73 2
+6425000 0 6431000 0
+6425000 4000 6431000 4000
+e 74 2
+6425000 12600000 6431000 12600000
+6425000 12604000 6431000 12604000
+e 75 2
+6441000 0 6447000 0
+6441000 4000 6447000 4000
+e 76 2
+6441000 12600000 6447000 12600000
+6441000 12604000 6447000 12604000
+e 77 2
+6457000 0 6463000 0
+6457000 4000 6463000 4000
+e 78 2
+6457000 12600000 6463000 12600000
+6457000 12604000 6463000 12604000
+e 79 2
+6473000 0 6479000 0
+6473000 4000 6479000 4000
+e 80 2
+6473000 12600000 6479000 12600000
+6473000 12604000 6479000 12604000
+DRC22_2
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal4 spacing = 6L
+DRC22_3
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal4 overlap of via3 = 2L
+DRC22_4
+0 0 2 May 15 19:38:33 2017                     
+Rule File Pathname: /home/ayman/Desktop/Team8FinalDRC/_tsmc035.rules_
+Metal4 spacing = 12L if width > 10L

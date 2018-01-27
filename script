@@ -1,0 +1,32 @@
+load_library tsmc035_typ
+read -technology "tsmc035_typ"  { /home/ayman/AFControlUnit.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/AFSystemWithoutNVM.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/AFModule.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/ALU.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/CacheRAM.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/DMAControlUnit.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/DMAmodule.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/FSM1.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/FSM2.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/FSM3.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/GenDataPath.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/MUX_4_1.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/my_adder.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/my_nadder.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/REG_MOD.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/REG4.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/Regfile.vhd }
+read -technology "tsmc035_typ"  { /home/ayman/triStateBuf.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+set register2register 1000.000000
+set input2register 1000.000000
+set register2output 1000.000000
+elaborate AFSystemWithoutNVM -architecture AFSystemWithoutNVM_Arch 
+optimize .work.AFSystemWithoutNVM.AFSystemWithoutNVM_Arch -target tsmc035_typ -macro -auto -effort quick -hierarchy auto 
+optimize_timing .work.AFSystemWithoutNVM.AFSystemWithoutNVM_Arch 
+report_area area_tot -cell_usage -all_leafs 
+report_delay delay_tot -num_paths 1 -critical_paths -clock_frequency
+set novendor_constraint_file FALSE
+auto_write AF_Syste.v
+

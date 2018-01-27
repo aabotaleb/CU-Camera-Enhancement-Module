@@ -1,0 +1,62 @@
+
+*******************************************************
+
+Cell: AFSystemWithoutNVM    View: INTERFACE    Library: work
+
+*******************************************************
+
+
+ Cell             Library  References     Total Area
+
+AFControlUnit     work            1 x      1      1 AFControlUnit
+DMAControlUnit    work            1 x      1      1 DMAControlUnit
+FSM1              work            1 x      1      1 FSM1
+FSM2              work            1 x      1      1 FSM2
+FSM3              work            1 x      1      1 FSM3
+GenDataPath       work            1 x      1      1 GenDataPath
+REG4              work            4 x      1      4 REG4
+REG8              work            2 x      1      2 REG8
+REG_MOD           work            2 x      1      2 REG_MOD
+and02             tsmc035_typ     4 x      1      5 gates
+and04             tsmc035_typ     4 x      2      7 gates
+aoi22             tsmc035_typ  1088 x      1   1610 gates
+buf02             tsmc035_typ   522 x      1    532 gates
+dff               tsmc035_typ  2048 x      5   9810 gates
+fake_gnd          tsmc035_typ     2 x      1      2 fake_gnd
+inv01             tsmc035_typ    11 x      1      8 gates
+inv02             tsmc035_typ   789 x      1    600 gates
+inv04             tsmc035_typ    80 x      1     80 gates
+mux21             tsmc035_typ     2 x      2      4 gates
+mux21_ni          tsmc035_typ  2060 x      2   3729 gates
+nand02            tsmc035_typ    18 x      1     18 gates
+nand03            tsmc035_typ    28 x      1     35 gates
+nand04            tsmc035_typ   306 x      1    453 gates
+nor02_2x          tsmc035_typ     5 x      1      5 gates
+nor02ii           tsmc035_typ    16 x      1     20 gates
+nor03_2x          tsmc035_typ   246 x      1    306 gates
+nor04             tsmc035_typ     9 x      1     13 gates
+oai21             tsmc035_typ   128 x      1    159 gates
+oai32             tsmc035_typ     1 x      2      2 gates
+or02              tsmc035_typ     8 x      1     10 gates
+or04              tsmc035_typ     8 x      2     16 gates
+xnor2             tsmc035_typ    14 x      2     27 gates
+xor2              tsmc035_typ     1 x      2      2 gates
+
+ Number of ports :                     158
+ Number of nets :                     7700
+ Number of instances :                7412
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Black Box AFControlUnit :               1
+ Black Box DMAControlUnit :              1
+ Black Box FSM1 :                        1
+ Black Box FSM2 :                        1
+ Black Box FSM3 :                        1
+ Black Box GenDataPath :                 1
+ Black Box REG4 :                        4
+ Black Box REG8 :                        2
+ Black Box REG_MOD :                     2
+ Number of fake_gnd :                    2
+ Number of gates :                   17449
+ Number of accumulated instances :    7412

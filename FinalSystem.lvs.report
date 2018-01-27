@@ -1,0 +1,2073 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         FinalSystem.lvs.report
+LAYOUT NAME:              /home/ayman/Desktop/Team8FinalLVS/_AFSystemWithoutNVM_Out1FInal_0.v.sp ('FinalSystem')
+SOURCE NAME:              /home/ayman/Desktop/Team8FinalLVS/_AFSystemWithoutNVM_Out1FInal_0.v.sp ('FinalSystem')
+RULE FILE:                /home/ayman/Desktop/Team8FinalLVS/_tsmc035.rules_
+HCELL FILE:               /home/ayman/mgc/adk3_1/technology/adk.hcell (-automatch)
+CREATION TIME:            Mon May 15 20:01:53 2017
+CURRENT DIRECTORY:        /home/ayman/Desktop/Team8FinalLVS
+USER NAME:                ayman
+CALIBRE VERSION:          v2012.3_31.26    Wed Oct 3 10:50:22 PDT 2012
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+  Warning:  LVS property resolution maximum exceeded.
+  Warning:  Source and layout refer to the same data.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        and02                         and02
+  CORRECT        and04                         and04
+  CORRECT        aoi22                         aoi22
+  CORRECT        buf02                         buf02
+  CORRECT        dff                           dff
+  CORRECT        inv01                         inv01
+  CORRECT        inv02                         inv02
+  CORRECT        inv04                         inv04
+  CORRECT        mux21                         mux21
+  CORRECT        mux21_ni                      mux21_ni
+  CORRECT        nand02                        nand02
+  CORRECT        nand03                        nand03
+  CORRECT        nand04                        nand04
+  CORRECT        nor02_2x                      nor02_2x
+  CORRECT        nor02ii                       nor02ii
+  CORRECT        nor03_2x                      nor03_2x
+  CORRECT        nor04                         nor04
+  CORRECT        oai21                         oai21
+  CORRECT        oai32                         oai32
+  CORRECT        or02                          or02
+  CORRECT        or04                          or04
+  CORRECT        xnor2                         xnor2
+  CORRECT        xor2                          xor2
+  CORRECT        FinalSystem                   FinalSystem
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "Vdd"
+   LVS GROUND NAME                        "GND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  sch_filter_direct_open  OPEN SOURCE DIRECT
+   LVS FILTER  sch_filter_direct_short  SHORT SOURCE DIRECT
+   LVS FILTER  sch_filter_mask_open  OPEN SOURCE MASK
+   LVS FILTER  sch_filter_mask_short  SHORT SOURCE MASK
+   LVS FILTER  lay_filter_direct_open  OPEN LAYOUT DIRECT
+   LVS FILTER  lay_filter_direct_short  SHORT LAYOUT DIRECT
+   LVS FILTER  v  OPEN
+   LVS FILTER  i  OPEN
+   LVS FILTER  e  OPEN
+   LVS FILTER  f  OPEN
+   LVS FILTER  g  OPEN
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         and02
+SOURCE CELL NAME:         and02
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          1         1         _invv (4 pins)
+                     1         1         _nand2v (5 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    _invv
+                        1          1            0            0    _nand2v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A0 A1 Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         and04
+SOURCE CELL NAME:         and04
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              11        11
+
+ Instances:          5         5         MN (4 pins)
+                     5         5         MP (4 pins)
+                ------    ------
+ Total Inst:        10        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               8         8
+
+ Instances:          1         1         _invv (4 pins)
+                     1         1         _nand4v (7 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                8          8            0            0
+
+   Instances:           1          1            0            0    _invv
+                        1          1            0            0    _nand4v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A0 A1 A2 A3 Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         aoi22
+SOURCE CELL NAME:         aoi22
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:              10        10
+
+ Instances:          4         4         MN (4 pins)
+                     4         4         MP (4 pins)
+                ------    ------
+ Total Inst:         8         8
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:               7         7
+
+ Instances:          1         1         SPMP_2_2 (6 pins)
+                     2         2         _smn2v (4 pins)
+                ------    ------
+ Total Inst:         3         3
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               7          7            0            0
+
+   Nets:                7          7            0            0
+
+   Instances:           1          1            0            0    SPMP_2_2
+                        2          2            0            0    _smn2v
+                  -------    -------    ---------    ---------
+   Total Inst:          3          3            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND B1 Y B0 A0 A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         buf02
+SOURCE CELL NAME:         buf02
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               5         5
+
+ Instances:          2         2         MN (4 pins)
+                     2         2         MP (4 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               4         4
+
+ Instances:          1         1         _invx2v (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               4          4            0            0
+
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invx2v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND Y A
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         dff
+SOURCE CELL NAME:         dff
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              5         5
+
+ Nets:              20        20
+
+ Instances:         14        14         MN (4 pins)
+                    14        14         MP (4 pins)
+                ------    ------
+ Total Inst:        28        28
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              5         5
+
+ Nets:              11        11
+
+ Instances:          4         4         _invv (4 pins)
+                     1         1         _invx2v (4 pins)
+                     4         4         _smn2v (4 pins)
+                     4         4         _smp2v (4 pins)
+                ------    ------
+ Total Inst:        13        13
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               5          5            0            0
+
+   Nets:               11         11            0            0
+
+   Instances:           4          4            0            0    _invv
+                        1          1            0            0    _invx2v
+                        4          4            0            0    _smn2v
+                        4          4            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:         13         13            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND D CLK Q
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         inv01
+SOURCE CELL NAME:         inv01
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               4         4
+
+ Instances:          1         1         MN (4 pins)
+                     1         1         MP (4 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               4         4
+
+ Instances:          1         1         _invv (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invv
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         inv02
+SOURCE CELL NAME:         inv02
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               4         4
+
+ Instances:          1         1         MN (4 pins)
+                     1         1         MP (4 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               4         4
+
+ Instances:          1         1         _invv (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               4          4            0            0
+
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invv
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND A Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         inv04
+SOURCE CELL NAME:         inv04
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              3         3
+
+ Nets:               4         4
+
+ Instances:          2         2         MN (4 pins)
+                     2         2         MP (4 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              3         3
+
+ Nets:               4         4
+
+ Instances:          1         1         _invv (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               3          3            0            0
+
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invv
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Statistics:
+
+   4 layout mos transistors were reduced to 2.
+     2 mos transistors were deleted by parallel reduction.
+   4 source mos transistors were reduced to 2.
+     2 mos transistors were deleted by parallel reduction.
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND A
+   Nets:         Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         mux21
+SOURCE CELL NAME:         mux21
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              11        11
+
+ Instances:          5         5         MN (4 pins)
+                     5         5         MP (4 pins)
+                ------    ------
+ Total Inst:        10        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          1         1         _invv (4 pins)
+                     2         2         _smn2v (4 pins)
+                     2         2         _smp2v (4 pins)
+                ------    ------
+ Total Inst:         5         5
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                7          7            0            0
+
+   Instances:           1          1            0            0    _invv
+                        2          2            0            0    _smn2v
+                        2          2            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:          5          5            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A0 A1 S0
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         mux21_ni
+SOURCE CELL NAME:         mux21_ni
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:              12        12
+
+ Instances:          6         6         MN (4 pins)
+                     6         6         MP (4 pins)
+                ------    ------
+ Total Inst:        12        12
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               8         8
+
+ Instances:          2         2         _invv (4 pins)
+                     2         2         _smn2v (4 pins)
+                     2         2         _smp2v (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            0            0
+
+   Nets:                8          8            0            0
+
+   Instances:           2          2            0            0    _invv
+                        2          2            0            0    _smn2v
+                        2          2            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:          6          6            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND S0 A1 A0 Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nand02
+SOURCE CELL NAME:         nand02
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          2         2         MN (4 pins)
+                     2         2         MP (4 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               5         5
+
+ Instances:          1         1         _nand2v (5 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                5          5            0            0
+
+   Instances:           1          1            0            0    _nand2v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A1 Y A0
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nand03
+SOURCE CELL NAME:         nand03
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               8         8
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               6         6
+
+ Instances:          1         1         _nand3v (6 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               4          4            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    _nand3v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND Y A2
+   Nets:         A0 A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nand04
+SOURCE CELL NAME:         nand04
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:              10        10
+
+ Instances:          4         4         MN (4 pins)
+                     4         4         MP (4 pins)
+                ------    ------
+ Total Inst:         8         8
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         7
+
+ Nets:               7         7
+
+ Instances:          1         1         _nand4v (7 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               7          7            0            0
+
+   Nets:                7          7            0            0
+
+   Instances:           1          1            0            0    _nand4v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND A0 Y A1 A2 A3
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nor02_2x
+SOURCE CELL NAME:         nor02_2x
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          2         2         MN (4 pins)
+                     2         2         MP (4 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               5         5
+
+ Instances:          1         1         _nor2v (5 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                5          5            0            0
+
+   Instances:           1          1            0            0    _nor2v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A0 A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nor02ii
+SOURCE CELL NAME:         nor02ii
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          1         1         _invv (4 pins)
+                     1         1         _nor2v (5 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    _invv
+                        1          1            0            0    _nor2v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A0 A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nor03_2x
+SOURCE CELL NAME:         nor03_2x
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              3         3
+
+ Nets:               8         8
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              3         3
+
+ Nets:               6         6
+
+ Instances:          1         1         _nor3v (6 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               3          3            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    _nor3v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND Y
+   Nets:         A0 A1 A2
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         nor04
+SOURCE CELL NAME:         nor04
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              10        10
+
+ Instances:          4         4         MN (4 pins)
+                     4         4         MP (4 pins)
+                ------    ------
+ Total Inst:         8         8
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          1         1         _nor4v (7 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                7          7            0            0
+
+   Instances:           1          1            0            0    _nor4v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A3 Y A2 A1 A0
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         oai21
+SOURCE CELL NAME:         oai21
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               8         8
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               6         6
+
+ Instances:          1         1         MP (4 pins)
+                     1         1         SPMN_2_1 (5 pins)
+                     1         1         _smp2v (4 pins)
+                ------    ------
+ Total Inst:         3         3
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    MP(P)
+                        1          1            0            0    SPMN_2_1
+                        1          1            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:          3          3            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND B0 A0 Y A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         oai32
+SOURCE CELL NAME:         oai32
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              12        12
+
+ Instances:          5         5         MN (4 pins)
+                     5         5         MP (4 pins)
+                ------    ------
+ Total Inst:        10        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               8         8
+
+ Instances:          1         1         SPMN_3_2 (7 pins)
+                     1         1         _smp2v (4 pins)
+                     1         1         _smp3v (5 pins)
+                ------    ------
+ Total Inst:         3         3
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                8          8            0            0
+
+   Instances:           1          1            0            0    SPMN_3_2
+                        1          1            0            0    _smp2v
+                        1          1            0            0    _smp3v
+                  -------    -------    ---------    ---------
+   Total Inst:          3          3            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A0 Y A1 A2 B1 B0
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         or02
+SOURCE CELL NAME:         or02
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          3         3         MN (4 pins)
+                     3         3         MP (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          1         1         _invv (4 pins)
+                     1         1         _nor2v (5 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    _invv
+                        1          1            0            0    _nor2v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A1 A0 Y
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         or04
+SOURCE CELL NAME:         or04
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              11        11
+
+ Instances:          5         5         MN (4 pins)
+                     5         5         MP (4 pins)
+                ------    ------
+ Total Inst:        10        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               8         8
+
+ Instances:          1         1         _invv (4 pins)
+                     1         1         _nor4v (7 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                8          8            0            0
+
+   Instances:           1          1            0            0    _invv
+                        1          1            0            0    _nor4v
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A0 A1 A2 A3
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         xnor2
+SOURCE CELL NAME:         xnor2
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               9         9
+
+ Instances:          5         5         MN (4 pins)
+                     5         5         MP (4 pins)
+                ------    ------
+ Total Inst:        10        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               6         6
+
+ Instances:          1         1         MP (4 pins)
+                     1         1         SPMN_2_1 (5 pins)
+                     1         1         _nand2v (5 pins)
+                     1         1         _smp2v (4 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           1          1            0            0    MP(P)
+                        1          1            0            0    SPMN_2_1
+                        1          1            0            0    _nand2v
+                        1          1            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:          4          4            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         Y A0 A1
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         xor2
+SOURCE CELL NAME:         xor2
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:              10        10
+
+ Instances:          6         6         MN (4 pins)
+                     6         6         MP (4 pins)
+                ------    ------
+ Total Inst:        12        12
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              2         2
+
+ Nets:               7         7
+
+ Instances:          1         1         MP (4 pins)
+                     1         1         SPMN_2_1 (5 pins)
+                     1         1         _invv (4 pins)
+                     1         1         _nand2v (5 pins)
+                     1         1         _smp2v (4 pins)
+                ------    ------
+ Total Inst:         5         5
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               2          2            0            0
+
+   Nets:                7          7            0            0
+
+   Instances:           1          1            0            0    MP(P)
+                        1          1            0            0    SPMN_2_1
+                        1          1            0            0    _invv
+                        1          1            0            0    _nand2v
+                        1          1            0            0    _smp2v
+                  -------    -------    ---------    ---------
+   Total Inst:          5          5            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        Vdd GND
+   Nets:         A0 A1 Y
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+  Warning:  LVS property resolution maximum exceeded.
+
+LAYOUT CELL NAME:         FinalSystem
+SOURCE CELL NAME:         FinalSystem
+
+--------------------------------------------------------------------------------------------------------------
+
+NUMBERS OF OBJECTS
+------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              0         0
+
+ Nets:           24746     24746
+
+ Instances:          4         4         and02 (2 pins)
+                     4         4         and04 (2 pins)
+                  1088      1088         aoi22 (7 pins)
+                   522       522         buf02 (4 pins)
+                  2048      2048         dff (5 pins)
+                    11        11         inv01 (2 pins)
+                   789       789         inv02 (4 pins)
+                    80        80         inv04 (3 pins)
+                     2         2         mux21 (2 pins)
+                  2060      2060         mux21_ni (6 pins)
+                    18        18         nand02 (2 pins)
+                    28        28         nand03 (4 pins)
+                   306       306         nand04 (7 pins)
+                     5         5         nor02_2x (2 pins)
+                    16        16         nor02ii (2 pins)
+                   246       246         nor03_2x (3 pins)
+                     9         9         nor04 (2 pins)
+                   128       128         oai21 (6 pins)
+                     1         1         oai32 (2 pins)
+                     8         8         or02 (2 pins)
+                     8         8         or04 (2 pins)
+                    14        14         xnor2 (2 pins)
+                     1         1         xor2 (2 pins)
+                ------    ------
+ Total Inst:      7396      7396
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               0          0            0            0
+
+   Nets:            24746      24746            0            0
+
+   Instances:           4          4            0            0    and02
+                        4          4            0            0    and04
+                     1088       1088            0            0    aoi22
+                      522        522            0            0    buf02
+                     2048       2048            0            0    dff
+                       11         11            0            0    inv01
+                      789        789            0            0    inv02
+                       80         80            0            0    inv04
+                        2          2            0            0    mux21
+                     2060       2060            0            0    mux21_ni
+                       18         18            0            0    nand02
+                       28         28            0            0    nand03
+                      306        306            0            0    nand04
+                        5          5            0            0    nor02_2x
+                       16         16            0            0    nor02ii
+                      246        246            0            0    nor03_2x
+                        9          9            0            0    nor04
+                      128        128            0            0    oai21
+                        1          1            0            0    oai32
+                        8          8            0            0    or02
+                        8          8            0            0    or04
+                       14         14            0            0    xnor2
+                        1          1            0            0    xor2
+                  -------    -------    ---------    ---------
+   Total Inst:       7396       7396            0            0
+
+
+o Statistics:
+
+   62 nets and 56 instances were matched arbitrarily.
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                     Nets
+                                     ----
+
+       17150                                                     17150
+       493                                                       493
+       17567                                                     17567
+       10872                                                     10872
+       82                                                        82
+       348                                                       348
+       7                                                         72
+       16414                                                     16427
+       16428                                                     16415
+       22999                                                     22999
+       22998                                                     22998
+       23167                                                     23167
+       23166                                                     23166
+       22964                                                     22964
+       22963                                                     22963
+       23058                                                     23058
+       23057                                                     23057
+       23356                                                     23356
+       23355                                                     23355
+       22886                                                     22886
+       22885                                                     22885
+       22884                                                     22884
+       529                                                       529
+       528                                                       528
+       437                                                       437
+       535                                                       535
+       532                                                       532
+       566                                                       566
+       23                                                        13
+       26                                                        9
+       16                                                        14
+       17                                                        24
+       14                                                        22
+       13                                                        10
+       9                                                         17
+       24                                                        16
+       22                                                        26
+       24852                                                     24904
+       24854                                                     24902
+       24856                                                     24900
+       24858                                                     24898
+       24860                                                     24896
+       24862                                                     24894
+       24864                                                     24892
+       24866                                                     24890
+       24868                                                     24888
+       24870                                                     24886
+       24873                                                     24884
+       24875                                                     24882
+       24878                                                     24880
+
+
+                                   Instances
+                                   ---------
+
+       X7390(216.000,560.000)  mux21                             X7389(152.000,560.000)  mux21
+       X7320(8552.000,6592.000)  and02                           X7320(8552.000,6592.000)  and02
+       X7319(8544.000,6824.000)  and02                           X7319(8544.000,6824.000)  and02
+       X7318(8240.000,6824.000)  and02                           X7318(8240.000,6824.000)  and02
+       X7386(632.000,96.000)  and04                              X7385(512.000,96.000)  and04
+       X7385(512.000,96.000)  and04                              X7386(632.000,96.000)  and04
+       X7384(384.000,96.000)  and04                              X7383(208.000,96.000)  and04
+       X7300(8664.000,6360.000)  nor02_2x                        X7300(8664.000,6360.000)  nor02_2x
+       X7299(5832.000,9376.000)  nor02_2x                        X7299(5832.000,9376.000)  nor02_2x
+       X7298(4656.000,9608.000)  nor02_2x                        X7298(4656.000,9608.000)  nor02_2x
+       X7297(4448.000,9376.000)  nor02_2x                        X7297(4448.000,9376.000)  nor02_2x
+       X7345(6320.000,3344.000)  or04                            X7345(6320.000,3344.000)  or04
+       X7344(6024.000,3112.000)  or04                            X7344(6024.000,3112.000)  or04
+       X7343(5792.000,3808.000)  or04                            X7343(5792.000,3808.000)  or04
+       X7342(5656.000,2648.000)  or04                            X7342(5656.000,2648.000)  or04
+       X7341(5032.000,11696.000)  or04                           X7341(5032.000,11696.000)  or04
+       X7340(4352.000,7056.000)  or04                            X7340(4352.000,7056.000)  or04
+       X7339(4208.000,8912.000)  or04                            X7339(4208.000,8912.000)  or04
+       X7328(8424.000,6592.000)  or02                            X7328(8424.000,6592.000)  or02
+       X7327(8048.000,6360.000)  or02                            X7327(8048.000,6360.000)  or02
+       X7326(7912.000,6360.000)  or02                            X7326(7912.000,6360.000)  or02
+       X7325(7376.000,6360.000)  or02                            X7325(7376.000,6360.000)  or02
+       X7324(6488.000,12392.000)  or02                           X7324(6488.000,12392.000)  or02
+       X7323(6368.000,6592.000)  or02                            X7323(6368.000,6592.000)  or02
+       X7322(6320.000,6592.000)  or02                            X7322(6320.000,6592.000)  or02
+       X7337(7656.000,6360.000)  nor04                           X7337(7656.000,6360.000)  nor04
+       X7336(2856.000,6360.000)  nor04                           X7336(2856.000,6360.000)  nor04
+       X7335(1192.000,7752.000)  nor04                           X7335(1192.000,7752.000)  nor04
+       X7334(576.000,96.000)  nor04                              X7334(576.000,96.000)  nor04
+       X7333(448.000,96.000)  nor04                              X7333(448.000,96.000)  nor04
+       X7332(328.000,96.000)  nor04                              X7332(328.000,96.000)  nor04
+       X7331(280.000,328.000)  nor04                             X7331(280.000,328.000)  nor04
+       X7330(272.000,96.000)  nor04                              X7330(272.000,96.000)  nor04
+       X7295(8800.000,6360.000)  inv01                           X7295(8800.000,6360.000)  inv01
+       X7294(8400.000,6824.000)  inv01                           X7294(8400.000,6824.000)  inv01
+       X7293(8344.000,6592.000)  inv01                           X7293(8344.000,6592.000)  inv01
+       X7292(7992.000,6592.000)  inv01                           X7292(7992.000,6592.000)  inv01
+       X7291(1728.000,7752.000)  inv01                           X7291(1728.000,7752.000)  inv01
+       X7290(1696.000,7984.000)  inv01                           X7290(1696.000,7984.000)  inv01
+       X7289(1360.000,10768.000)  inv01                          X7289(1360.000,10768.000)  inv01
+       X7288(1160.000,7752.000)  inv01                           X7288(1160.000,7752.000)  inv01
+       X7287(1128.000,10768.000)  inv01                          X7287(1128.000,10768.000)  inv01
+       X7286(504.000,328.000)  inv01                             X7286(504.000,328.000)  inv01
+       X7382/X1(1096.000,96.000)  xnor2                          X7382/X1(1096.000,96.000)  xnor2
+       X7382/X0(1032.000,96.000)  xnor2                          X7382/X0(1032.000,96.000)  xnor2
+       X7381/X1(952.000,96.000)  xnor2                           X7381/X1(952.000,96.000)  xnor2
+       X7381/X0(888.000,96.000)  xnor2                           X7381/X0(888.000,96.000)  xnor2
+       X7380/X1(872.000,328.000)  xnor2                          X7380/X1(872.000,328.000)  xnor2
+       X7380/X0(808.000,328.000)  xnor2                          X7380/X0(808.000,328.000)  xnor2
+       X7379/X1(344.000,560.000)  xnor2                          X7379/X1(344.000,560.000)  xnor2
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  1 sec
